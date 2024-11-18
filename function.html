@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         console.log("task-1")
+        name=prompt("enter your name");
+        function greet(m="dear"){
+            console.log("hi"+name)
+            
+
+
+        }
+        greet()
+
+
+        console.log("task-2")
+        a=+prompt("enter a value");
+        b=+prompt("enter b value");
+        function sum(a,b){
+            console.log(a+b)
+          }
+        sum(a,b)
+
+        console.log("task-3")
+        a=+prompt("enter a value");
+    
+        function mul(){
+            console.log(a*a)
+          }
+        mul(a)
+
+
+
+
+        console.log("task-4")
+        a=[2,5,2]
+        s=0;
+        
+         function add() {
+                 for(i=0;i<=a.length-1;i++){
+                     console.log(a[i]);
+                     s+=a[i]
+                    p=s/a.length;
+
+                    
+                }
+                console.log("sum of numbers",s);
+                console.log("avg of numbers",p);
+                
+
+         }
+         add()
+
+        console.log(" Task-5//Finding Vowels")
+     function findVowels() {
+  const str = prompt("Enter a string:");
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  const foundVowels = [];
+
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+      foundVowels.push(str[i]);
+    }
+  }
+
+  if (foundVowels.length > 0) {
+    console.log("Vowels found:", foundVowels.join(", "));
+  } else {
+    console.log("No vowels found.");
+  }
+}
+findVowels();
+
+
+console.log(" Task-6//Converting Temperature Into C or F")
+let temp = parseFloat(prompt("Enter the temperature:"));
+let scale = prompt("Enter the scale to convert to (C or F):");
+function convertTemperature(temp, scale) {
+    if (scale === "C") {
+        return (temp - 32) * 5 / 9;
+    } else if (scale === "F") {
+        return (temp * 9 / 5) + 32;
+    } else {
+        return "Invalid scale";
+    }
+  }
+  // Converting the temperature and displaying the result
+  let convertedTemp = convertTemperature(temp, scale);
+  console.log('The converted temperature is: ${convertedTemp}');
+        
+        
+        
+
+       
+    </script>
+    
+</body>
+</html>
